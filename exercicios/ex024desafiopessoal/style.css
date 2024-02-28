@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --font1: 'Kode Mono', sans-serif;
+    --font2: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: white;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: chocolate;
+    font-family: var(--font1);
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 20px;
+    font-size: 10vw;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 20px;
+}
+
+section {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 3vw;
+    font-size: 2vw;
+    padding-right: 3vw;
+}
+
+section > h1 {
+    font-family: var(--font2);
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 4vw;
+}
+
+section#cabeca > p {
+    text-align: center;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    line-height: 2.5em;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+section.imagem {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.442);
+    background-attachment: fixed;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    background-color: rgba(0, 0, 0, 0.578);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.299);
+}
+
+section > p > span {
+    color: rgb(167, 6, 6);
+    font-weight: bolder;
+}
+
+section > h2 {
+    font-family: var(--font2);
+    padding-bottom: 2vw;
+    padding-left: 20px;
+}
+
+section > h3 {
+    font-family: var(--font2);
+    font-size: 3vw;
+    padding-bottom: 2.5vw;
+    text-decoration: underline;
+}
+
+section > p > span > a {
+    text-decoration: none;
+    color: red;
+}
+
+section > p > span > a:hover {
+    text-decoration: underline;
+}
+
+section > p > a {
+    text-decoration: none;
+    color: red;
+}
+
+section > p > a:hover {
+    text-decoration: underline;
+}
+
+section > ul {
+    list-style-type: "\00A0\27A1\00A0";
+    padding-left: 10px;
+    line-height: 3vw;
+}
+
+section > ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section#img1 {
+    background-image: url('https://conteudo.imguol.com.br/c/entretenimento/53/2017/10/23/popeye-1508778728938_v2_4x3.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+section#img2 {
+    background-image: url('https://nautica.com.br/wp-content/uploads/2020/04/popeye-1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+section#img3 {
+    background-image: url('https://nautica.com.br/wp-content/uploads/2020/04/marinheiro-popeye-de-verdade-3-bx.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+section#img4 {
+    background-image: url('https://nautica.com.br/wp-content/uploads/2020/04/marinheiro-popeye-de-verdade-5..-bx.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+footer {
+    background-color: chocolate;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
