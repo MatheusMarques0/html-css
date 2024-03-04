@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(190, 190, 190);
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: black;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.porcentagem {
+            text-align: right;
+        }
+        
+        td.numero {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 2em;
+            padding: 10px;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+<table>
+    <caption>População Das Universidades Federativas</caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width: 150px;">% da população</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="numero">45.919.049</td>
+            <td class="porcentagem">21,9%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numero">21.168.791</td>
+            <td class="porcentagem">10,1%</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="numero">17.264.943</td>
+            <td class="porcentagem">8,2%</td>
+        </tr>
+    </tbody>
+     <tfoot>
+        <tr>
+            <th scope="row">Total de habitants</th>
+            <th scope="row">84.353.783</th>
+            <th scope="row">40,2%</th>
+        </tr>
+     </tfoot>
+ </table>
+</body>
+</html>
