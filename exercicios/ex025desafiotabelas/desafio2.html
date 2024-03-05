@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Tábelas parte 2</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        .destaque, tfoot, thead {
+            background-color: grey;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        .nota {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Construa a tabela mostrada no vídeo</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Discíplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Exatas</th>
+                    <td>Matemática</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr class="destaque">
+                    <th scope="row" colspan="4">Média de Exatas</th>
+                    <th>0.0</td>
+                    </tr>
+            </tbody>
+        
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="2">Humanas</th>
+                    <td>História</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                    <td class="nota">0.0</td>
+                </tr>
+                <tr class="destaque">
+                    <th scope="row" colspan="4">Média de Humanas</th>
+                    <th>0.0</th>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>
