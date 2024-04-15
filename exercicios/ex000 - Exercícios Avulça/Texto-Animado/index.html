@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto animado em CSS</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(30, 30, 47);
+        }
+
+        .texto {
+            color: red;
+            border-bottom: 2px solid red;
+            border-top: 2px solid red;
+            overflow: hidden;
+            animation: text 3s linear infinite;
+        }
+
+        @keyframes text{
+            0%{
+                width: 0px;
+                height: 0px;
+            }
+            30% {
+                width: 50px;
+                height: 0px;
+            }
+            60% {
+                width: 220px;
+                height: 40px;
+            }
+            80% {
+                width: 220px;
+                height: 30px;
+            }
+
+            100% {
+                width: 0px;
+                height: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="texto">
+        <h1>INSCREVA-SE</h1>
+    </div>
+</body>
+</html>
