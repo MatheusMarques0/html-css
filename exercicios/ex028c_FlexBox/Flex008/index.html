@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        div#container {
+            background-color: salmon;
+            display: flex;
+            align-items: flex-start;
+            flex-flow: row wrap;
+            height: 400px;
+            justify-content: center;
+
+        }
+
+        div.item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #i1{
+            order: 10;
+            align-self: flex-end;
+        }
+
+        #i2{
+            order: 6;
+            align-self: stretch;
+        }
+
+        #i3{
+            order: 4;
+            align-self: stretch;
+        }
+
+        #i4{
+            order: 0;
+            align-self: flex-end;
+        }
+
+        #i5{
+            order: -2;
+            align-self: stretch;
+        }
+
+        #i6{
+            order: 5;
+            align-self: auto;
+        }
+
+        #i7{
+            order: -5;
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+        <div class="item" id="i7">H</div>
+        <div class="item" id="i7">I</div>
+        <div class="item" id="i7">j</div>
+        <div class="item" id="i1">K</div>
+</body>
+</html>
