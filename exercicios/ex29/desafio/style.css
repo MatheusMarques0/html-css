@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-rows: 2fr 1fr 5fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr; 
+    /* No vídeo, as colunas e as linhas tem tamanhos diferentes*/
+    gap: 2px;
+}
+
+.topo, .menu, .principal, .secundario, .rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo{
+    grid-row: 1 / 1 span;
+    grid-column: 1 / span 3 ;
+    background-color: salmon;
+}
+
+.menu{
+    grid-row: 2 / span 1 ;
+    grid-column: 1 / span 3;
+    background-color: lightgreen;
+}
+
+.principal{
+    grid-row: 3 / span 1 ;
+    grid-column: 1 / span 2;
+    background-color: lightskyblue;
+}
+
+.secundario{
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+    background-color: lightyellow;
+}
+
+.rodape{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 3;
+    background-color: plum;
+}
+
+/* Versão do Guanabara: */
