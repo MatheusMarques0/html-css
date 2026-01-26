@@ -1,4 +1,12 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 .container{
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-rows: 2fr 1fr 5fr 1fr;
     grid-template-columns: 1fr 2fr 1fr; 
@@ -42,4 +50,42 @@
     background-color: plum;
 }
 
-/* Versão do Guanabara: */
+/* Versão do Guanabara: 
+
+*{
+    box-sizing: border-box;
+    margin; 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 50ps 40px 2000pxp 40px;
+    grid-template-columns: 200px 150px;
+    gap: 5px;
+}
+
+.caixa{
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#topo{
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+#menu{
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+#principal{
+    grid-area: 3 / 1 / -2 / 2;
+}
+
+
+
+*/
